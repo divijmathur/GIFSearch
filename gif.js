@@ -17,7 +17,8 @@ $("#add-giphy").on('click',function() {
         event.preventDefault();
         var gifVal = $("#giphy-input").val();
         var u = "https://api.giphy.com/v1/gifs/search?api_key=sKYmnUIjhERlGh0oJCv82J2pKvVCfeeU&q=" + gifVal + "&limit=10&offset=0&rating=G&lang=en";
-        console.log(u);
+        // console.log(u);
+        
         $.ajax({
             url: u,
             method: "GET"
@@ -28,6 +29,6 @@ $("#add-giphy").on('click',function() {
                 a.attr('src', response.data[i].images.downsized_large.url);
                 $('div').append(a);
             }
-            debugger;
+            
         });
 });
