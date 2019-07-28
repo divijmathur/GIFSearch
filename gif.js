@@ -24,11 +24,13 @@ $("#add-giphy").on('click',function() {
             method: "GET"
         }).then(function(response){
             console.log(response);
+
             for (var i = 0; i < response.data.length; i++) {
                 var a = $("<img>");
-                a.attr('src', response.data[i].images.downsized_large.url);
-                $('div').append(a);
+                a.attr('src', response.data[i].images.downsized_still.url);
+                $('#giphy-view').append(a);  
             }
-            
+            giphys.push(gifVal);
+            renderButtons(gifVal);            
         });
 });
