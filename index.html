@@ -10,23 +10,24 @@
 </head>
 <body>
     <div class="container-fluid">
-        <h1>GIF Search</h1>
+        <div class="jumbotron text-center" style="background-color: black;"><h1>GIF Search</h1></div>
+        
     
         <!-- Movies will get dumped here -->
         <div id="buttons-view">
-            <button value="dogs">dogs</button>
-            <button value="cats">cats</button>
-            <button value="elephants">elephants</button>
-            <button value="birds">birds</button>
-            <button value="skunks">skunks</button>
+            <button value="dogs" class="btn btn-outline-primary">dogs</button>
+            <button value="cats" class="btn btn-outline-primary">cats</button>
+            <button value="elephants" class="btn btn-outline-primary">elephants</button>
+            <button value="birds" class="btn btn-outline-primary">birds</button>
+            <button value="skunks" class="btn btn-outline-primary">skunks</button>
         </div>
     
             <form id="giphy-form">
-                <label for="giphy-input">Search for a GIF</label>
-                <input type="text" id="giphy-input"><br>
+                <label for="giphy-input" >Search for a GIF</label>
+                <input type="search" placeholder= "Search for a GIF" aria-label="Search" id="giphy-input"><br>
     
           <!-- Button triggers new movie to be added -->
-                <input id="add-giphy" type="submit" value="Search for a GIF">
+                <input id="add-giphy" type="submit" value="Search for a GIF" class="btn btn-primary">
             </form>
             <div id="giphy-view"></div>
         </div>
