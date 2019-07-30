@@ -25,6 +25,7 @@ $("input[type=submit]").on("click", function(){
     $("#buttons-view").append("<button>");
     $("#buttons-view button:last-child").attr("class", newGiphy);
     $("#buttons-view button:last-child").attr("class", "giphyDiv");
+    $("#buttons-view button:last-child").attr("class", "btn btn-primary");
     $("#buttons-view button:last-child").attr("value", newGiphy);
     $("#buttons-view button:last-child").text(newGiphy);
     event.preventDefault();

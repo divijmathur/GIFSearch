@@ -13,4 +13,12 @@ label {
   color: white;
  }
 
+ .giphyDiv {
+   float: left;
+ }
+
+ .newGiphy {
+  margin: 10px;
+ }
+
 
